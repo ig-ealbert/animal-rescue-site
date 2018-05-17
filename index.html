@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Fur Children Animal Rescue</title>
+</head>
+<body>
+  <div class="vertical-menu">
+		<ul id="navigationMenu">
+		  <li><a href="#" class="active">Home</a></li>
+		  <li><a href="#about-us">About Us</a></li>
+		  <li><a href="#dogs">Dogs</a></li>
+		  <li><a href="#cats">Cats</a></li>
+		  <li><a href="#other-pets">Other Pets</a></li>
+		  <li><a href="#ways-to-help">Ways to Help</a></li>
+		  <li><a href="#contact">Contact</a></li>
+	  </ul>
+	</div>
+	<div class="mainContent">
+		<h1>Fur Children Animal Rescue</h1>
+		<h2><a name="about-us"></a>About Us</h2>
+		<p>At Fur Children Animal Rescue, we love animals as if they were our children.
+			We believe every rescue animal deserves a home.</p>
+		<h2><a name="dogs"></a>Dogs</h2>
+		<div class="pet-listing"></div>
+		<h2><a name="cats"></a>Cats</h2>
+		<div class="pet-listing"></div>
+		<h2><a name="other-pets"></a>Other Pets</h2>
+		<div class="pet-listing"></div>
+		<h2><a name="ways-to-help"></a>Ways To Help</h2>
+		<p>We're always looking for volunteers!  Please <a href="mailto:FurChildrenAnimalRescue@gmail.com">email us</a> to join!</p>
+		<p>We can use the following items:</p>
+		<ul>
+			<li>Unopened dog or cat food</li>
+			<li>New or gently used dog or cat beds</li>
+			<li>Clean blankets</li>
+			<li>Clean towels</li>
+			<li>Water or food bowls</li>
+			<li>Leashes or collars</li>
+		</ul>
+		<p>You can also make a donation.  Please send a check to the address in the Contact section.</p>
+		<h2><a name="contact"></a>Contact</h2>
+		<p><b>Mailing Address</b><br/>
+		  1234 Furry Lane<br/>
+			Happy Place, ST 99999</p>
+		<p><b>Phone number:</b><br/>
+		(123)456-7890</p>
+		<p><a href="mailto:FurChildrenAnimalRescue@gmail.com">Email</a></p>
+	</div>
+	<div id="petDetailsContainer" class="modal">
+		<div class="pet-details">
+			<div id="petPhoto" class="pet-details-left"></div>
+			<div class="pet-details-right">
+			  <h1 id="petName"></h1>
+			  <p id="petDescription"></p>
+			  <div id="petRestrictions"></div>
+				<div><a id="adoptThisPetEmail">Contact us</a> to meet
+				<span id="adoptThisPetName"></span>!</div>
+		  </div>
+			<div class="close-button">X</div>
+		</div>
+	</div>
+	<!-- These need to be below the HTML elements -->
+	<script type="text/javascript" src="adoptable-pets.json"></script>
+	<script type="text/javascript" src="animalRescue.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</body>
+</html>
